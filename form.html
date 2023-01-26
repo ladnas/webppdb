@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stel.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <header><img src="smk-muhammadiyah-1-yogyakarta-information-web (1).png" alt=""></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visi.html">Visi misi</a></li>
+            <li><a href="info.html">Informasi</a></li>
+            <li><a href="form.html">Daftar</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <section>
+    <article>
+        <h2>Daftarkan anak anda sekarang!</h2>
+        <form method="GET" name="Form" ><fieldset><legend>Masukan informasi anak anda</legend>
+            <label>Nama lengkap:<input type="text" placeholder="Masukan nama lengkap anak anda" id="nama" ></label>
+            <p>Jenis Kelamin:</p>
+            <label><input type="radio" value="Laki-Laki" name="kelamin" id="Kelamin" >Laki-Laki</label>
+            <label><input type="radio" value="Perempuan" name="kelamin" id="Kelamin" >Perempuan</label>
+            <label>Alamat:<textarea id="Alamat" ></textarea>  
+            <label>Asal Sekolah:<input type="text" placeholder="" id="Asal" ></label>
+            <label>Jurusan Pilihan:</label>
+            <select name="jurusan" id="jurusan">
+                <option value="RPL">RPL</option>
+                <option value="TKJ">TKJ</option>
+                <option value="Animasi">Animasi</option>
+                <option value="Akutansi">Akutansi</option>
+                <option value="Broadcasting">Broadcasting</option>
+            </select>
+            <br>
+            <button type="button" onclick="Simpan()">Kirim</button>
+            <button >Batal </button>
+            <script src="form.js"></script>
+            
+        </form>
+    </article>
+    </section>      
+</body>
+</html>
